@@ -5,7 +5,7 @@ for (let i = 0; i < numberOfRequests; i++) {
     fetch(url, {
         method: 'GET'
     }).then((res) => {
-        const json = res.status
+        const json = res.status + ' - ' + res.statusText
         console.log(json)
     }).catch((error) => {
         console.log('ERROR:', error)
